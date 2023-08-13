@@ -30,11 +30,9 @@ html {
 }
 .dark-theme {
   --color-grey-4: #f8f8f8;
-  --color-grey-0: #454e56;
-  --color-grey-1: #fff;
-  --color-white: #6c7983;
+  --color-grey-0: #2a2e35;
 
-  transition: var(--trans);
+  --color-white: #2a2e35;
 }
 
 #change {
@@ -166,6 +164,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
 }
+
 .sidebar .navigation .nav-items .nav-item a:hover {
   color: var(--color-green-dark);
   letter-spacing: 3px;
@@ -537,7 +536,7 @@ body::-webkit-scrollbar-thumb:hover {
   transform: translate(-50%, -50%);
   position: absolute;
   -webkit-animation: dot 1s infinite ease-in-out;
-  animation: dot 1s infinite ease-in-out;
+  animation: dot 2s infinite ease-in-out;
 }
 @-webkit-keyframes dot {
   0% {
@@ -613,10 +612,10 @@ body::-webkit-scrollbar-thumb:hover {
     display: none;
   }
   .sidebar .navigation .nav-items a i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 25%;
+    top: 20%;
     transform: translate(-50%, -50%);
   }
   .header {
@@ -658,6 +657,13 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 2rem;
   }
   .sidebar .navigation .nav-items a {
-    margin: 0 3px;
+    width: 50px;
+    margin: 0 4px;
+  }
+}
+
+@media screen and (max-width: 1405px) {
+  .sidebar .navigation .nav-items a {
+    color: #2a2e35;
   }
 }
