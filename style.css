@@ -30,9 +30,10 @@ html {
 }
 .dark-theme {
   --color-grey-4: #f8f8f8;
-  --color-grey-0: #2a2e35;
-
-  --color-white: #2a2e35;
+  --color-grey-0:#272727 ;
+  /* #2a2e35 */
+  --color-white: #272727;
+  /* #2a2e35 */
 }
 
 #change {
@@ -323,7 +324,7 @@ body::-webkit-scrollbar-thumb:hover {
 .sec-projects .projects-content .projects .project .project-btn {
   border-radius: initial;
   padding: 0.8rem 2rem;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: var(--color-green-dark);
   color: var(--color-white);
   transition: var(--trans);
   position: relative;
@@ -494,13 +495,10 @@ body::-webkit-scrollbar-thumb:hover {
   display: inline-block;
   font-weight: 500;
   color: var(--color-white);
-  background-color: var(--color-grey-5);
+  background-color: #27ae60;
   padding: 1rem 2rem;
   border-radius: 7px;
   transition: var(--trans);
-}
-.btn:hover {
-  background-color: var(--color-green-dark);
 }
 
 .main-title {
